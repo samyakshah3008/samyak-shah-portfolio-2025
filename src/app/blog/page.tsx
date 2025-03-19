@@ -7,9 +7,9 @@ import Link from "next/link";
 import { getAllBlogs } from "../../../lib/getAllBlogs";
 
 export const metadata: Metadata = {
-  title: "Blogs | John Doe",
+  title: "Blogs | Samyak Shah",
   description:
-    "John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+    "Samyak Shah is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
 };
 
 export default async function Blog() {

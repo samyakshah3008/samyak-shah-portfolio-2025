@@ -1,9 +1,9 @@
+import { Footer } from "@/components/Footer";
 import { Sidebar } from "@/components/Sidebar";
-import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { twMerge } from "tailwind-merge";
-import { Footer } from "@/components/Footer";
+import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "John Doe - Developer",
+  title: "Samyak Shah - Engineer",
   description:
-    "John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+    "Samyak Shah is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
 };
 
 export default function RootLayout({
