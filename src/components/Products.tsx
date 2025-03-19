@@ -1,12 +1,11 @@
 "use client";
-import React from "react";
-import { Heading } from "./Heading";
-import { Product } from "@/types/products";
 import { products } from "@/constants/products";
-import Link from "next/link";
-import Image from "next/image";
-import { Paragraph } from "./Paragraph";
+import { Product } from "@/types/products";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { Heading } from "./Heading";
+import { Paragraph } from "./Paragraph";
 
 export const Products = () => {
   return (
@@ -28,7 +27,7 @@ export const Products = () => {
             <Link
               href={product.slug ? `/projects/${product.slug}` : product.href}
               key={product.href}
-              className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4"
+              className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4 min-h-[120px]"
             >
               <Image
                 src={product.thumbnail}
@@ -49,7 +48,7 @@ export const Products = () => {
                     {product.description}
                   </Paragraph>
                 </div>
-                <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0">
+                <div className="flex space-x-2 md:mb-1 mt-2 md:mt-0 flex-wrap">
                   {product.stack?.map((stack: string) => (
                     <span
                       key={stack}

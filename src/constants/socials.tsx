@@ -1,16 +1,16 @@
 import {
+  IconBrandGithub,
+  IconBrandInstagram,
   IconBrandLinkedin,
-  IconBrandTwitter,
-  IconBrandYoutube,
+  IconBrandX,
+  IconLink,
 } from "@tabler/icons-react";
-
-// import Peerlist from "../../public/images/logos/peerlist.png";
 
 export const socials = [
   {
     href: "https://x.com/SamyakShah_18",
     label: "Twitter",
-    icon: IconBrandTwitter,
+    icon: IconBrandX,
   },
   {
     href: "https://www.linkedin.com/in/samyakshah3008",
@@ -18,8 +18,18 @@ export const socials = [
     icon: IconBrandLinkedin,
   },
   {
+    href: "https://github.com/samyakshah3008",
+    label: "Github",
+    icon: IconBrandGithub,
+  },
+  {
+    href: "https://www.instagram.com/samyakshah_18",
+    label: "Instagram",
+    icon: IconBrandInstagram,
+  },
+  {
     href: "https://peerlist.io/samyakshah",
     label: "Peerlist",
-    icon: IconBrandYoutube,
+    icon: IconLink,
   },
 ];

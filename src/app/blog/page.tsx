@@ -2,10 +2,9 @@ import { Container } from "@/components/Container";
 import { Heading } from "@/components/Heading";
 import { Highlight } from "@/components/Highlight";
 import { Paragraph } from "@/components/Paragraph";
-import { Products } from "@/components/Products";
-import { getAllBlogs } from "../../../lib/getAllBlogs";
-import { Blogs } from "@/components/Blogs";
 import { Metadata } from "next";
+import Link from "next/link";
+import { getAllBlogs } from "../../../lib/getAllBlogs";
 
 export const metadata: Metadata = {
   title: "Blogs | John Doe",
@@ -25,7 +24,17 @@ export default async function Blog() {
         Ever since <Highlight> I was a kid</Highlight>, I&apos;ve been
         fascinated by technology.
       </Paragraph>
-      <Blogs blogs={data} />
+      {/* <Blogs blogs={data} /> */}
+      <div className="text-secondary">
+        Blogs coming soon...meanwhile please check over my hashnode blogs -{" "}
+        <Link
+          href="https://samyakshah.hashnode.dev"
+          target="_blank"
+          className="underline"
+        >
+          Here
+        </Link>{" "}
+      </div>
     </Container>
   );
 }
